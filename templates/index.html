@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mnist / Prototype</title>
+    <script src=""></script>
+  </head>
+  <body>
+    <h1>Mnist / Prototype</h1>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="image" accept="image/png" multiple >
+  <input type="submit" value = "send">
+</form>
+</br>
+  <div>
+    {% if img %}
+    <p>
+    判別結果:{{ img }}
+    </p>
+    {% endif %}
+  </div>
+
+</body>
+
+  <script>
+
+</html>
